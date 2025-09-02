@@ -35,7 +35,7 @@ Passionate about leveraging technology to solve real-world problems and deliver 
 ---
 
 ## 🎓 Education & Certifications
-- *BSc in Engineering Physics* – [Your University Name]  
+- *BSc in Engineering Physics* – University of Cape Coast  
 - *Udemy Certificate*: Arduino Course (Completed)  
 
 ---
