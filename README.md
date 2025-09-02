@@ -2,7 +2,7 @@
 
 Welcome to my interactive *portfolio website* showcasing my skills, projects, and experience in IT support, embedded systems, and software development.  
 
-🔗 *Live Portfolio:* [View Here](princekyei.github.io/prince-portfolio/)  
+🔗 *Live Portfolio:* [View Here]([princekyei.github.io/prince-portfolio/](https://princekyei.github.io/PRINCE-PORTFOLIO/))  
 
 ---
 
