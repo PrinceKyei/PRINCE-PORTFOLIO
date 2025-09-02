@@ -6,7 +6,7 @@ Welcome to my interactive *portfolio website* showcasing my skills, projects, an
 
 ---
 
-## 👨‍💻 About Me
+## About Me
 I am an *Engineering Physics graduate* and *IT Support Specialist* with hands-on experience in:
 - Troubleshooting and technical support
 - Embedded systems (Arduino, microcontrollers)
@@ -18,7 +18,7 @@ Passionate about leveraging technology to solve real-world problems and deliver 
 
 ---
 
-## 🚀 Features of Portfolio Website
+## Features of Portfolio Website
 ✅ Modern responsive design  
 ✅ Dark/Light mode toggle 🌙 ☀  
 ✅ Smooth animations & hover effects  
@@ -40,7 +40,7 @@ Passionate about leveraging technology to solve real-world problems and deliver 
 
 ---
 
-## 📬 Contact Me
+## Contact Me
 - 📧 Email: [princekyei080@gmail.com](mailto:princekyei080@gmail.com)  
 - 📞 Phone: +233 55 170 6461  
 - 💻 GitHub: [PrinceKyei](https://github.com/PrinceKyei)  
