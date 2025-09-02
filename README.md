@@ -27,14 +27,14 @@ Passionate about leveraging technology to solve real-world problems and deliver 
 
 ---
 
-## 📂 Projects Highlighted
+## Projects Highlighted
 - *Smoke & Flame Detection System* – IoT-based safety monitoring  
 - *Web-based Student Voting Platform* – Secure online voting app  
 - *IT Support Portfolio* – Troubleshooting, hardware/software maintenance  
 
 ---
 
-## 🎓 Education & Certifications
+## Education & Certifications
 - *BSc in Engineering Physics* – University of Cape Coast  
 - *Udemy Certificate*: Arduino Course (Completed)  
 
@@ -54,4 +54,4 @@ Passionate about leveraging technology to solve real-world problems and deliver 
 
 ---
 
-✨ Built with *HTML, CSS, and JavaScript* – Hosted on *GitHub Pages*.
+Built with *HTML, CSS, and JavaScript* – Hosted on *GitHub Pages*.
