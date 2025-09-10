@@ -264,6 +264,52 @@ footer a {
     border-radius: 5px;
 }
 
+/* 🎨 Main styles (default desktop look) */
+/* ... your normal CSS ... */
+
+/* Navbar styles */
+/* Hero section styles */
+/* Skills & Projects grid */
+/* Footer styles */
+/* etc. */
+
+/* 📱 Responsive tweaks start here */
+
+/* --- Medium screens (tablets, phones landscape) --- */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: row;
+        /* keep horizontal */
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-links {
+        flex-direction: row;
+        /* keep links side by side */
+        gap: 10px;
+    }
+
+    .hero-content {
+        flex-direction: row;
+        /* text + image side by side */
+        flex-wrap: wrap;
+        /* allows shrinking */
+        text-align: left;
+    }
+
+    .hero-text {
+        flex: 1;
+        min-width: 200px;
+    }
+
+    .hero-img img {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+/* --- Small screens (phones portrait) --- */
 @media (max-width: 480px) {
     .hero-text h1 {
         font-size: 1.8rem;
@@ -276,45 +322,10 @@ footer a {
     section {
         padding: 1rem;
     }
-}
 
-/* Mobile styles */
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .nav-links {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .nav-links li {
-        width: 100%;
-    }
-
-    .nav-links a {
-        display: block;
-        padding: 10px;
-        width: 100%;
-        border-radius: 5px;
-    }
-
-    .hero-content {
-        flex-direction: column;
-        flex-wrap: wrap;
-        text-align: center;
-    }
-
-    .hero-text {
-        flex: 1;
-        min-width: 200px;
-    }
-
-    .hero-img img {
-        width: 150px;
-        height: 150px;
+    .skills,
+    .projects {
+        grid-template-columns: 1fr;
+        /* stack cards */
     }
 }
