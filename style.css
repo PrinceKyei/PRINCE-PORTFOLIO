@@ -310,6 +310,6 @@ footer a {
 
     .skills,
     .projects {
-        grid-template-columns: 1fr; /* stack cards */
+        grid-template-columns: 1fr;
     }
 }
