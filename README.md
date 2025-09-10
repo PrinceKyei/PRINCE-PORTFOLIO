@@ -50,7 +50,6 @@ Passionate about leveraging technology to solve real-world problems and deliver 
 
 ## 🖼 Preview!
 ![Portfolio preview](<Portfolio dark mode.png>)
-![Portfolio preview](<Portfolio light mode-1.png>)
 
 ---
 
