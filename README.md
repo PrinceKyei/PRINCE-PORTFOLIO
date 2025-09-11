@@ -20,7 +20,7 @@ Passionate about leveraging technology to solve real-world problems and deliver 
 
 ## Features of Portfolio Website
 ✅ Modern responsive design  
-✅ Dark/Light mode toggle 🌙 ☀  
+✅ Dark/Light mode toggle
 ✅ Smooth animations & hover effects  
 ✅ Project showcase section  
 ✅ Contact section with GitHub & LinkedIn  
