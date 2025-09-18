@@ -8,7 +8,7 @@
 body.dark {
     --bg-color: #3e639b;
     --text-color: #e0e0e0;
-    --card-bg: #112240;
+    --card-bg: #526483;
     --accent: #64ffda;
 }
 
@@ -20,7 +20,7 @@ body {
     color: var(--text-color);
     transition: background 0.3s, color 0.3s;
 
-    background-image: url(background.png);
+    background-image: url(background2.png);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -280,22 +280,18 @@ footer a {
 @media (max-width: 768px) {
     .navbar {
         flex-direction: row;
-        /* keep horizontal */
         justify-content: space-between;
         align-items: center;
     }
 
     .nav-links {
         flex-direction: row;
-        /* keep links side by side */
         gap: 10px;
     }
 
     .hero-content {
         flex-direction: row;
-        /* text + image side by side */
         flex-wrap: wrap;
-        /* allows shrinking */
         text-align: left;
     }
 
