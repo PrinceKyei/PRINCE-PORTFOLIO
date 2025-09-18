@@ -265,17 +265,6 @@ footer a {
     border-radius: 5px;
 }
 
-/* 🎨 Main styles (default desktop look) */
-/* ... your normal CSS ... */
-
-/* Navbar styles */
-/* Hero section styles */
-/* Skills & Projects grid */
-/* Footer styles */
-/* etc. */
-
-/* 📱 Responsive tweaks start here */
-
 /* --- Medium screens (tablets, phones landscape) --- */
 @media (max-width: 768px) {
     .navbar {
@@ -307,7 +296,7 @@ footer a {
 }
 
 /* --- Small screens (phones portrait) --- */
-@media (max-width: 480px) {
+@media (max-width: 360px) {
     .hero-text h1 {
         font-size: 1.8rem;
     }
@@ -324,5 +313,12 @@ footer a {
     .projects {
         grid-template-columns: 1fr;
         /* stack cards */
+    }
+
+    body {
+        background-image: url(background2.png);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
     }
 }
