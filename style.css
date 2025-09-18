@@ -296,7 +296,7 @@ footer a {
 }
 
 /* --- Small screens (phones portrait) --- */
-@media (max-width: 180px) {
+@media (max-width: 480px) {
     .hero-text h1 {
         font-size: 1.8rem;
     }
