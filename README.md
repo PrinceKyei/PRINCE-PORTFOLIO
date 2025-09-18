@@ -8,10 +8,10 @@ Welcome to my interactive *portfolio website* showcasing my skills, projects, an
 
 ## About Me
 I am an *Engineering Physics graduate* and *IT Support Specialist* with hands-on experience in:
+- Frontend development
+- Programming (HTML, CSS and JavaScript)
 - Troubleshooting and technical support
 - Embedded systems (Arduino, microcontrollers)
-- Programming (MATLAB, C++)
-- Web development
 - Graphic design  
 
 Passionate about leveraging technology to solve real-world problems and deliver innovative, reliable solutions.
@@ -20,7 +20,6 @@ Passionate about leveraging technology to solve real-world problems and deliver 
 
 ## Features of Portfolio Website
 ✅ Modern responsive design  
-✅ Dark/Light mode toggle
 ✅ Smooth animations & hover effects  
 ✅ Project showcase section  
 ✅ Contact section with GitHub & LinkedIn  
@@ -35,8 +34,8 @@ Passionate about leveraging technology to solve real-world problems and deliver 
 ---
 
 ## Education & Certifications
-- *BSc in Engineering Physics* – University of Cape Coast  
-- *Udemy Certificate*: Arduino Course (Completed)  
+*BSc in Engineering Physics* – University of Cape Coast
+*Udemy Certificate*: Arduino Course (Completed)  
 
 ---
 
