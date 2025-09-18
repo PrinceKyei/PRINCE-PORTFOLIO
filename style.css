@@ -1,12 +1,12 @@
 :root {
     --bg-color: #f5f7fa;
-    --text-color: #333;
-    --card-bg: #fff;
+    --text-color: #ffffff;
+    --card-bg: #112240;
     --accent: #64ffda;
 }
 
 body.dark {
-    --bg-color: #0a192f;
+    --bg-color: #3e639b;
     --text-color: #e0e0e0;
     --card-bg: #112240;
     --accent: #64ffda;
@@ -20,7 +20,7 @@ body {
     color: var(--text-color);
     transition: background 0.3s, color 0.3s;
 
-    background-image: url(background2.jpg);
+    background-image: url(background.png);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -76,6 +76,7 @@ section {
     max-width: 1000px;
     margin: auto;
     animation: fadeInUp 1s ease;
+    text-align: center;
 }
 
 h2 {
@@ -194,7 +195,7 @@ footer a {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, #0a192f, #112240);
+    background: linear-gradient(135deg, #0a192f, #101011);
     color: #fff;
     padding: 100px 50px;
     display: flex;
@@ -258,7 +259,7 @@ footer a {
 }
 
 .download-btn {
-    background: #e91e63;
+    background: #23aa8b;
     color: #fff;
     padding: 10px 15px;
     border-radius: 5px;
