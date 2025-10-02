@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 :root {
     --bg-color: #f5f6f8;
     --text-color: #ffffff;
@@ -34,6 +38,9 @@ header h2 {
     font-size: 2.5rem;
     margin: 0;
     color: #ffffff;
+    opacity: 0;
+    transform: translateY(-30px);
+    animation: fadeDown 1s ease forwards;
 }
 
 header h1 {
@@ -109,6 +116,11 @@ section {
     flex-direction: column;
     align-items: center;
     text-align: center;
+
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeUp 1.2s ease forwards;
+    animation-delay: 0.4s;
 }
 
 .hero-content {
@@ -150,9 +162,14 @@ section {
 
 section h2 {
     color: var(--accent);
-
     display: inline-block;
     margin-bottom: 1rem;
+}
+
+section p {
+    text-align: left;
+    justify-content: flex-start;
+    color: #fff;
 }
 
 /* Tab titles row */
@@ -234,7 +251,7 @@ section h2 {
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 40px;
-    color: #fff;
+    color: var(--accent);
 }
 
 .service-cards {
@@ -242,6 +259,11 @@ section h2 {
     grid-template-columns: repeat(2, 1fr);
     /* 3 equal columns */
     gap: 20px;
+
+}
+
+.service-cards .card a:hover {
+    color: var(--color1);
 }
 
 
@@ -348,7 +370,7 @@ section h2 {
 }
 
 .project-cards .card a:hover {
-    color: #fb7185;
+    color: var(--color1);
 }
 
 /* Tablet (2 per row) */
@@ -367,26 +389,40 @@ section h2 {
 
 
 /* Animations */
-@keyframes fadeIn {
+@keyframes fadeDown {
     from {
         opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
+        transform: translateY(-30px);
     }
 
     to {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Scroll reveal (about, services, projects, footer) */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .toggle-btn {
@@ -480,7 +516,7 @@ section h2 {
 }
 
 .social-links a:hover {
-    color: #1e90ff;
+    color: var(--accent);
 }
 
 /* Form */
@@ -515,7 +551,7 @@ section h2 {
 }
 
 .contact-form button:hover {
-    background: #630909;
+    background: #0f3680;
 }
 
 /* --- Medium screens (tablets, phones landscape) --- */
