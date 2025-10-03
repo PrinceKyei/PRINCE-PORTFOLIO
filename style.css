@@ -5,7 +5,7 @@ html {
 :root {
     --bg-color: #f5f6f8;
     --text-color: #ffffff;
-    --accent: #1794ce;
+    --accent: #00aaff;
     --color1: #cc0a24;
 }
 
@@ -174,7 +174,7 @@ section p {
 /* Tab titles row */
 .tab-titles {
     display: flex;
-    gap: 40px;
+    gap: 160px;
     margin-bottom: 20px;
     justify-content: flex-start;
     /* aligned left */
@@ -212,7 +212,6 @@ section p {
 .skill,
 .education,
 .cert,
-.contact,
 .socials {
     margin-bottom: 20px;
 }
@@ -220,7 +219,6 @@ section p {
 .skill h3,
 .education h3,
 .cert h3,
-.contact h3,
 .socials h3 {
     margin: 0 0 5px 0;
     font-size: 1.2rem;
@@ -230,20 +228,18 @@ section p {
 .skill p,
 .education p,
 .cert p,
-.contact p,
 .socials p a {
     margin: 0;
     color: #ffffff;
     line-height: 1.4;
 }
 
-/* General Section Styling */
+/* SERVICES Section */
 .services {
     text-align: center;
-    background: #090e16;
-    /* dark background */
     color: #fff;
-    padding: 100px 180px;
+    padding: 50px 20px;
+
 }
 
 .services h2 {
@@ -256,9 +252,45 @@ section p {
 .service-cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    /* 3 equal columns */
-    gap: 20px;
+    gap: 50px;
+}
 
+/* Cards */
+.service-cards .card {
+    background: #090e1b;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: left;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card i {
+    font-size: 30px;
+    color: var(--accent);
+    margin-bottom: 15px;
+}
+
+/* Hover effect */
+.service-cards .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Headings */
+.service-cards .card h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Links */
+.service-cards .card a {
+    color: var(--accent);
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 15px;
+    transition: color 0.3s;
 }
 
 .service-cards .card a:hover {
@@ -266,122 +298,86 @@ section p {
 }
 
 
-/* Individual cards */
-.card {
-    background: #090e1b;
-    padding: 25px;
-    border-radius: 12px;
-    text-align: left;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-/* Hover effect */
-.card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-}
-
-/* Card icons */
-.card i {
-    font-size: 30px;
-    color: var(--accent);
-    /* red */
-    margin-bottom: 15px;
-}
-
-/* Headings */
-.card h3 {
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-bottom: 15px;
-}
-
-/* Links */
-.card a {
-    color: var(--accent);
-    font-weight: bold;
-    text-decoration: none;
-    display: inline-block;
-    margin-top: 15px;
-    transition: color 0.3s;
-}
-
-.card a:hover {
-    color: var(--accent);
-}
-
-
-
-
-
-
 /* PROJECTS Section */
-.projects {
+#projects .section-title {
     text-align: center;
-    color: #fff;
-    padding: 50px 20px;
-
-}
-
-.projects h2 {
+    color: #00aaff;
     font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 40px;
-    color: var(--accent);
+    margin-bottom: 30px;
 }
 
-.project-cards {
+/* Grid layout */
+#projects .projects-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
-/* Cards */
-.project-cards .card {
-    background: #090e1b;
-    padding: 25px;
+/* Card base */
+#projects .project-card {
+    position: relative;
     border-radius: 12px;
-    text-align: left;
-    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+    cursor: pointer;
+    height: 300px;
+    width: 300px;
+    /* consistent height */
 }
 
-/* Hover effect */
-.project-cards .card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-}
-
-/* Headings */
-.project-cards .card h3 {
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-bottom: 15px;
-}
-
-/* Links */
-.project-cards .card a {
+#projects .project-card a {
     color: var(--accent);
-    font-weight: bold;
-    text-decoration: none;
-    display: inline-block;
-    margin-top: 15px;
-    transition: color 0.3s;
 }
 
-.project-cards .card a:hover {
-    color: var(--color1);
+/* Card image */
+#projects .project-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s ease;
 }
+
+/* Overlay effect */
+#projects .project-card .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.75);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    text-align: left;
+    opacity: 0;
+    transition: 0.5s ease;
+    padding: 15px;
+}
+
+#projects .project-card:hover img {
+    transform: scale(1.1);
+}
+
+#projects .project-card:hover .overlay {
+    opacity: 1;
+}
+
 
 /* Tablet (2 per row) */
 @media (max-width: 900px) {
-    .project-cards {
+
+    .project-cards,
+    .service-cards {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 /* Mobile (1 per row) */
 @media (max-width: 600px) {
-    .project-cards {
+
+    .project-cards,
+    .service-cards {
         grid-template-columns: 1fr;
     }
 }
@@ -585,36 +581,120 @@ section p {
 
 /* --- Small screens (phones portrait) --- */
 @media (max-width: 480px) {
-    .hero-text h1 {
-        font-size: 1.8rem;
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-links {
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    .hero-content {
+        flex-direction: row;
+        flex-wrap: wrap;
+        text-align: left;
+    }
+
+    .hero-text {
+        flex: 1;
+        min-width: 200px;
+    }
+
+    .hero-img img {
+        width: 300px;
+        height: 300px;
     }
 
     .hero-text h3 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .hero-text h2 {
+        display: block;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    /* Tab titles row */
+    .tab-titles {
+        display: flex;
+        gap: 8px;
+        margin-bottom: 5px;
+        justify-content: flex-start;
+        /* aligned left */
+        text-align: left;
+    }
+
+    .tab-title {
+        cursor: pointer;
         font-size: 1rem;
+        font-weight: bold;
+        color: #6d6a6a;
+        transition: color 0.1s ease;
+    }
+
+    .tab-title.active {
+        color: var(--accent);
+        border-bottom: 2px solid var(--accent);
+    }
+
+    .tab-title:hover {
+        color: #333;
+    }
+
+
+    /* Tab content */
+    .tab-panel {
+        display: none;
+    }
+
+    .tab-panel.active {
+        justify-content: flex-start;
+        display: block;
+        text-align: left;
+    }
+
+
+    .skill,
+    .education,
+    .cert,
+    .contact,
+    .socials {
+        margin-bottom: 10px;
+    }
+
+
+    .skill h3,
+    .education h3,
+    .cert h3,
+    .contact h3,
+    .socials h3 {
+        margin: 0 0 5px 0;
+        font-size: 1rem;
+        color: var(--accent);
+    }
+
+    .skill p,
+    .education p,
+    .cert p,
+    .contact p,
+    .socials p a {
+        margin: 0;
+        color: #ffffff;
+        line-height: 1.4;
     }
 
     section {
         padding: 1rem;
     }
 
-    .skills,
-    .projects {
-        grid-template-columns: 1fr;
-        /* stack cards */
-    }
-
-
-}
-
-@media (max-width: 900px) {
-    .service-cards {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-/* For mobile (1 card per row) */
-@media (max-width: 600px) {
-    .service-cards {
+    #projects .projects-grid {
         grid-template-columns: 1fr;
     }
+
+
 }
