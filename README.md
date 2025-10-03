@@ -27,8 +27,8 @@ Passionate about leveraging technology to solve real-world problems and deliver 
 ---
 
 ## Projects Highlighted
-- *Smoke & Flame Detection System* – IoT-based safety monitoring  
-- *Web-based Student Voting Platform* – Secure online voting app  
+- *Embedded Systems Project* – IoT-based safety monitoring  
+- *Web Development* – Responsive web designs
 - *IT Support Portfolio* – Troubleshooting, hardware/software maintenance  
 
 ---
