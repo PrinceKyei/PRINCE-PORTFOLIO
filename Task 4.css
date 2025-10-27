@@ -1,0 +1,218 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.quiz-container {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 20px 30px;
+    width: 100vh;
+    max-width: 1000px;
+    color: #fff;
+    text-align: left;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+#instructions {
+    width: 90%;
+    min-height: 100%;
+    padding: 40px 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#instructions strong {
+    color: #ffd700;
+    font-weight: bolder;
+}
+
+
+#quiz-page {
+    width: 90%;
+    min-height: 200%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+}
+
+h1 {
+    font-size: 2.2rem;
+    margin-bottom: 25px;
+    text-align: center;
+    color: #f0f3f5;
+    letter-spacing: 0.5px;
+}
+
+/* Text */
+p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    max-width: 900px;
+    text-align: left;
+}
+
+#instructions ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+li::marker {
+    color: linear-gradient(135deg, #243a9b, #542980);
+    font-size: 1.5rem;
+}
+
+ul {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    max-width: 900px;
+    padding-left: 0x;
+    text-align: left;
+    list-style-type: none;
+    margin-left: 0;
+}
+
+
+
+#question {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin: 50px auto 50px auto;
+    max-width: 900px;
+}
+
+.options {
+    max-width: 900px;
+    margin: 0 auto 30px auto;
+}
+
+.options label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: none;
+    padding: 12px 15px;
+    margin-bottom: 8px;
+    border-radius: 15px;
+    border: 2px solid #f3e5e5;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+.options input[type="radio"] {
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    position: relative;
+    margin: 0;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.options input[type="radio"]:checked {
+    background: radial-gradient(circle, #667eea 40%, #764ba2 100%);
+    border-color: #fff;
+}
+
+.options label:hover {
+    background: linear-gradient(135deg, #3650c7, #ab62f5);
+    border-color: transparent;
+}
+
+/* Buttons */
+button {
+    display: inline-block;
+    padding: 14px 28px;
+    font-size: 1.1rem;
+    background: linear-gradient(135deg, #243a9b, #542980);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+    margin: 0 auto 20px auto;
+    align-items: center;
+    text-align: center;
+    font-weight: bolder;
+}
+
+#next-btn,
+#prev-btn {
+    display: inline-block;
+    width: 150px;
+    padding: 14px 0;
+    margin: 10px auto;
+}
+
+#prev-btn {
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+#prev-btn:hover {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    border-color: transparent;
+}
+
+
+button:hover {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: #fff;
+}
+
+#score {
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#quiz-page.end-screen {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+#quiz-title {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+#result p {
+    font-size: 1.4rem;
+    margin: 15px 0 15px 0;
+    font-weight: 600;
+    color: #fff;
+}
+
+#restart-btn {
+    display: block;
+    margin: 10px auto;
+}
+
+/*
+.highlight {
+    color: #ffd700;
+    font-weight: 800;
+    font-size: 1.6rem;
+}*/

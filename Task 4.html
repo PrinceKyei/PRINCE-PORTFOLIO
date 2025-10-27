@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="Task 4.css">
+</head>
+
+<body>
+
+    <div class="quiz-container glass">
+        <h1 id="quiz-title">Frontend Quiz</h1>
+
+        <!-- Instructions Page -->
+        <div id="instructions">
+            <!--<h2>Welcome!</h2>-->
+            <p>This quiz has <strong>3 multiple-choice questions</strong></p>
+            <ul>
+                <li>You must select an answer before proceeding.</li>
+                <li>At the end, your score will be displayed.</li>
+                <li>You can only restart the quiz at the end.</li>
+            </ul>
+            <button id="start-btn">Start Quiz</button>
+
+        </div>
+
+        <!-- Quiz Page -->
+        <div id="quiz-page" style="display: none;">
+            <div id="progress"></div>
+            <div id="quiz"></div>
+
+            <button id="next-btn">Next</button>
+            <button id="restart-btn" style="display: none;">Restart</button>
+            <div id="result"></div>
+        </div>
+    </div>
+
+    <script src="Task 4.js"></script>
+</body>
+
+</html>

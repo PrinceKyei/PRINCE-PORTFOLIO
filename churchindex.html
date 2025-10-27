@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>CERYC TPC</title>
+
+    <!-- Favicon (replace with your own if you like) -->
+    <link rel="icon" href="church logo1.png" type="image/svg+xml">
+
+
+    <link rel="stylesheet" href="churchstyle.css">
+</head>
+<style>
+    .favicon-generator {
+        width: 64px;
+        height: 64px;
+        background: linear-gradient(90deg, #0a7bd6, #6f43f5);
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    .favicon-generator img {
+        width: 48px;
+        height: 48px;
+        border-radius: 8px;
+        object-fit: cover;
+    }
+</style>
+
+<body>
+
+    <!-- Event banner -->
+    <div class="event-bar center">Jersey Sunday Service• Sunday October 12 • <a href="#events">See events</a></div>
+
+    <!-- Header -->
+    <header>
+        <div class="header-inner site">
+            <div class="brand" aria-hidden="false">
+                <img class="logo" src="perfect church logo.png" alt="Church logo" />
+                <div>
+                    <div class="title">CERYC The Perfect Church</div>
+                    <div style="font-size:0.78rem;color:var(--muted)">Community • Worship • Service</div>
+                </div>
+            </div>
+
+            <nav class="main-nav" role="navigation" aria-label="Main navigation">
+                <ul id="mainMenu">
+                    <li><a href="#about">About</a></li>
+                    <li>
+                        <a href="#ministries">Ministries ▾</a>
+                        <ul class="sub" aria-label="Ministries submenu">
+                            <li>Choir</li>
+                            <li>Media Team</li>
+                            <li>Technical Team</li>
+                            <li>Usher Team</li>
+                        </ul>
+                    </li>
+                    <li><a href="#sermons">Sermons</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#connect">Connect</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="btn btn-ghost" id="giveBtn">Give</button>
+                <button class="btn btn-primary" id="ctaJoin">Join Us</button>
+            </div>
+
+            <!-- Hamburger only for mobile -->
+            <div class="menu-toggle" id="menuToggle" aria-label="Toggle menu" role="button" tabindex="0">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <main class="site">
+        <section class="hero" aria-labelledby="heroTitle">
+            <div class="hero-left">
+                <span class="eyebrow">Join us this Sunday</span>
+                <h1 id="heroTitle">A welcoming place for worship, learning, and serving God.</h1>
+                <p class="lead">Christ Embassy Royalties Youth Church, <span>The Perfect Church</span> — weekly worship
+                    and community outreaches. Everyone is welcome.</p>
+
+
+                <div class="hero-cta">
+
+                    <a class="btn btn-primary" href="church 2.mp4">Watch a message</a>
+
+                    </button>
+                    <a class="btn btn-ghost" href="#events">View events</a>
+                </div>
+            </div>
+
+            <div class="hero-right">
+                <div class="card-media" aria-hidden="false">
+                    <!-- Poster image - replace with your artwork -->
+                    <video autoplay muted loop playsinline>
+                        <source src="church 4.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <!-- About / Ministries -->
+        <section id="about" class="section">
+            <div style="display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap">
+                <div>
+                    <h2>About CERYC TPC</h2>
+                    <p class="muted">We are a growing church focused on worship, community service, and sharing faith
+                        through hearing of the Word of God. Join a ministry or attend a service this week. Everyone has
+                        a place. Come let's worship together with our Highly Esteemed man of God — <span> Pastor Wisdom
+                            Klatsu.</span>
+                    </p>
+                </div>
+                <div style="text-align:right">
+
+                    <a href="#connect" class="btn btn-ghost">Plan a visit</a>
+                </div>
+            </div>
+
+            <div class="cards-grid" style="margin-top:20px">
+                <article class="card">
+                    <h4>Worship Services</h4>
+                    <p>Vibrant worship, modern music, and a message grounded in scripture.</p>
+                </article>
+                <article class="card">
+                    <h4>Tech & Media</h4>
+                    <p>Join our team to produce streaming services, videos, and digital experiences.</p>
+                </article>
+                <article class="card">
+                    <h4>Community Outreach</h4>
+                    <p>Food drives, tutoring, and community partnerships to serve those in need.</p>
+                </article>
+            </div>
+        </section>
+
+
+
+
+        <!-- Sermons / Video gallery -->
+        <section id="sermons" class="section">
+            <div style="display:flex;align-items:center;justify-content:space-between">
+                <a class="btn btn-sermon" href="#sermons">Sermons & Messages</a>
+                <a href="#sermons" class="muted">All sermons →</a>
+            </div>
+
+            <div class="video-grid">
+                <div class="video-item" role="article" aria-label="Local sermon">
+                    <video controls preload="metadata" poster="Sermon image1.png">
+
+                        <source src="church 2.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+
+                <!-- Local HTML5 video fallback example (replace src) -->
+                <div class="video-item" role="article" aria-label="Local sermon">
+                    <video controls preload="metadata" poster="sermon image2.png">
+
+                        <source src="church 3.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+
+                <div class="video-item" role="article" aria-label="Local sermon">
+                    <video controls preload="metadata" poster="Sermon image3.png">
+
+                        <source src="church.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <!-- Events carousel -->
+        <section id="events" class="section">
+            <div style="display:flex;align-items:center;justify-content:space-between">
+                <a class="btn btn-upcoming-events" href="#events">Upcoming Event</a>
+                <div style="display:flex;gap:8px;align-items:center">
+                    <button class="carousel-btn" id="prevEvent" aria-label="Previous events">◀</button>
+                    <button class="carousel-btn" id="nextEvent" aria-label="Next events">▶</button>
+                </div>
+            </div>
+
+            <div class="events" style="margin-top:12px">
+                <div class="events-track" id="eventsTrack" tabindex="0" aria-live="polite" style="padding:8px 0">
+
+                    <div class="event-card">
+                        <img src="Jersey Sunday.jpg" alt="Jersey Sunday">
+                        <div class="overlay">
+                            <strong>JERSEY SUNDAY</strong>
+                            <div class="muted">Sunday • October 12 TPC Main Auditorium</div>
+                            <p class="muted" style="margin-top:8px">Family-friendly worship time. Put on your team's
+                                jersey. Service promises to be very engaging and blissful.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="event-card">
+                        <img src="Iam part 2.jpg" alt="I am Part 2">
+                        <div class="overlay">
+                            <strong>I AM PART 2</strong>
+                            <div class="muted">Sunday • 9:00 AM</div>
+                            <p class="muted" style="margin-top:8px">New Series of Teaching. Join us to fellowship
+                                this
+                                Sunday.</p>
+                        </div>
+                    </div>
+
+                    <div class="event-card">
+                        <img src="i am 3.jpg" alt="I am">
+                        <div class="overlay">
+                            <strong>I AM RECAP</strong>
+                            <div class="muted">Sunday • 9:00 AM</div>
+                            <p class="muted" style="margin-top:8px">God's focus is not on external
+                                blessings but what is happening to you internally.</p>
+                        </div>
+                    </div>
+
+                    <div class="event-card">
+                        <img src="I am 4.jpg" alt="I am">
+                        <div class="overlay">
+                            <strong>I AM RECAP</strong>
+                            <div class="muted">Sunday • 9:00 AM</div>
+                            <p class="muted" style="margin-top:8px">The Bread of life brings fulfilment, strength
+                                and
+                                Vitality.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Connect / Contact -->
+        <section id="connect" class="section">
+            <div style="display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap">
+                <h2>Get connected</h2>
+                <p class="muted" style="max-width:58ch">Sign up for our newsletter, ask for prayer, or plan a visit.
+                    We’d love to hear from you.</p>
+            </div>
+
+            <div class="contact-grid">
+                <div>
+                    <h3>Visit us</h3>
+                    <p class="muted">JLK PLAZA FORECOURT • NORTH LEGON</p>
+                    <p class="muted">Sundays 9:00 AM • Midweek services & groups available</p>
+
+                    <h3 style="margin-top:18px">Hours</h3>
+                    <p class="muted">Sunday's 9 am • Wednesday's 6 pm • Friday's 7 pm</p>
+
+                    <h3 style="margin-top:18px">Media</h3>
+                    <p class="muted">You can watch all sermons online or join our live stream every Sunday.</p>
+                </div>
+
+                <aside class="newsletter" aria-labelledby="newsletterTitle">
+                    <h3 id="newsletterTitle">Stay updated</h3>
+                    <p class="muted">Weekly newsletter with events and messages.</p>
+                    <form id="connectForm" onsubmit="return false;">
+                        <input class="input" id="emailInput" type="email" placeholder="Your email address" required />
+                        <input class="input" id="nameInput" type="text" placeholder="Your full name (optional)" />
+                        <button class="btn btn-primary" id="subscribeBtn">Subscribe</button>
+                        <div id="formMsg" style="margin-top:12px;color:var(--accent-1);font-weight:700;display:none">
+                        </div>
+                    </form>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="site">
+            <div class="footer-grid">
+                <div>
+                    <h4>About</h4>
+                    <ul>
+                        <li>Our story</li>
+                        <li>Leadership</li>
+                        <li>Beliefs</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4>Ministries</h4>
+                    <ul>
+                        <li>Choir</li>
+                        <li>Fellowships</li>
+                        <li>Media Team</li>
+                        <li>Technical Team</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4>Resources</h4>
+                    <ul>
+                        <li>Sermons</li>
+                        <li>Events</li>
+                        <li>Give</li>
+                        <li>Media</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>Phone: </li>
+                        <li>Email: info@ceryctpc.org</li>
+                        <li>Office: Sunday 9:00 AM</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div>© <span id="year"></span> CERYC The Perfect Church • All rights reserved</div>
+                <div style="display:flex;gap:12px;align-items:center">
+                    <a style="color:#e6eef8">Privacy</a>
+                    <a style="color:#e6eef8">Terms</a>
+                    <div style="width:12px"></div>
+                    <div class="favicon-generator">
+                        <img src="perfect church logo.png" alt="favicon-preview">
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ---------- VIDEO MODAL ---------- -->
+    <div id="videoModal" role="dialog" aria-modal="true" aria-hidden="true"
+        style="display:none;position:fixed;inset:0;background:rgba(2,6,23,0.6);z-index:2000;align-items:center;justify-content:center;padding:20px">
+        <div style="width:100%;max-width:980px;background:#000;border-radius:12px;overflow:hidden;position:relative">
+            <button id="closeModal" aria-label="Close video"
+                style="position:absolute;right:12px;top:8px;z-index:10;background:transparent;border:0;color:white;font-size:18px;padding:8px;cursor:pointer">✕</button>
+            <!-- Use YouTube embed OR local video src (comment/uncomment the appropriate block) -->
+            <iframe id="modalIframe" width="100%" height="560" src="" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+
+            <!--
+      <video id="modalVideo" controls style="width:100%;height:560px;background:#000">
+        <source src="path/to/your-sermon.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      -->
+        </div>
+    </div>
+
+    <link rel="JavaScript" href="churchscript.js">
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navMenu = document.querySelector('#mainMenu');
+
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            menuToggle.classList.toggle('open');
+        });
+
+        // Smooth scroll between sections
+        const links = document.querySelectorAll('a[href^="#"]');
+        links.forEach(link => {
+            link.addEventListener('click', e => {
+                const targetId = link.getAttribute('href');
+                if (targetId.length > 1) {
+                    e.preventDefault();
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 60,
+                            behavior: 'smooth'
+                        });
+                    }
+                    navMenu.classList.remove('active');
+                    menuToggle.classList.remove('open');
+                }
+            });
+        });
+
+        const carousel = document.querySelector('.cards-container');
+        const leftArrow = document.querySelector('.arrow.left');
+        const rightArrow = document.querySelector('.arrow.right');
+
+        rightArrow.addEventListener('click', () => {
+            carousel.scrollBy({ left: 300, behavior: 'smooth' });
+        });
+
+        leftArrow.addEventListener('click', () => {
+            carousel.scrollBy({ left: -300, behavior: 'smooth' });
+        });
+    </script>
+</body>
+
+
+</html>

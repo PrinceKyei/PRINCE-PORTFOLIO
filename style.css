@@ -5,7 +5,7 @@ html {
 :root {
     --bg-color: #f5f6f8;
     --text-color: #ffffff;
-    --accent: #00aaff;
+    --accent: #bb26af;
     --color1: #cc0a24;
 }
 
@@ -43,17 +43,7 @@ header h2 {
     animation: fadeDown 1s ease forwards;
 }
 
-header h1 {
-    font-size: 2.5rem;
-    margin: 0;
-}
 
-nav {
-    text-align: center;
-    padding: 1rem;
-    background: var(--card-bg);
-
-}
 
 nav a {
     margin: 0 15px;
@@ -151,9 +141,9 @@ section {
 .hero-img img {
     width: 250px;
     height: 250px;
-    border-radius: 50%;
+    border-radius: 10%;
     object-fit: cover;
-    border: 4px solid var(--accent);
+    border: 2px solid var(--accent);
     text-align: center;
     align-items: center;
 }
@@ -301,7 +291,7 @@ section p {
 /* PROJECTS Section */
 #projects .section-title {
     text-align: center;
-    color: #00aaff;
+    color: var(--accent);
     font-size: 2rem;
     margin-bottom: 30px;
 }
