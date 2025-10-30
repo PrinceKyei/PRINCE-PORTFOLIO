@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout Webpage</title>
+    <link rel="stylesheet" href="Task3.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <h2>My Responsive Webpage </h2>
+        <h2></h2>
+        <nav>
+            <a href="#" class="btn hire-btn">Home</a>
+            <a href="#" class="btn hire-btn">About</a>
+            <a href="#" class="btn hire-btn">Tasks</a>
+            <a href="#" class="btn hire-btn">Contact</a>
+        </nav>
+
+        <!-- Menu Button -->
+        <div class="menu-bar">
+            <i class="fas fa-bars"></i>
+            <div class="dropdown glass">
+                <a href="#task1"><i class="fas fa-book"></i> Task 1</a>
+                <a href="#task2"><i class="fas fa-box"></i> Task 2</a>
+                <a href="#task3"><i class="fas fa-columns"></i> Task 3</a>
+                <a href="#task4"><i class="fas fa-question-circle"></i> Task 4</a>
+                <a href="#task5"><i class="fas fa-list-check"></i> Task 5</a>
+                <a href="#task6"><i class="fas fa-globe"></i> Task 6</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <!-- Sidebar -->
+        <sidebar class="sidebar glass">
+            <h2 class="sidebar-title">Categories</h2>
+            <nav>
+                <button class="btn"><i class="fas fa-book"></i> Tasks</button>
+                <button class="btn"><i class="fas fa-box"></i> About Me</button>
+                <button class="btn"><i class="fas fa-columns"></i> Services</button>
+                <button class="btn"><i class="fas fa-question-circle"></i> Products</button>
+                <button class="btn"><i class="fas fa-list-check"></i> Quiz App</button>
+                <button class="btn"><i class="fas fa-globe"></i> Skills</button>
+                <button class="btn"><i class="fas fa-book"></i> Socials</button>
+                <button class="btn"><i class="fas fa-box"></i> To do app</button>
+                <button class="btn"><i class="fas fa-columns"></i> Projects</button>
+                <button class="btn"><i class="fas fa-code"></i>Frontend </button>
+                <button class="btn"><i class="fas fa-list-check"></i>Portfolio</button>
+                <button class="btn"><i class="fas fa-phone"></i> Contact</button>
+                <button class="btn"><i class="fas fa-book"></i> Education</button>
+                <button class="btn"><i class="fas fa-box"></i> Engineering</button>
+                <button class="btn"><i class="fas fa-microchip"></i> Embedded</button>
+                <button class="btn"><i class="fas fa-network-wired"></i>IT Support</button>
+                <button class="btn"><i class="fas fa-pen-nib"></i>Graphic Designs</button>
+                <button class="btn"><i class="fas fa-link"></i> Links</button>
+                <button class="btn"><i class="fas fa-book"></i> Programming</button>
+                <button class="btn"><i class="fas fa-columns"></i> Certifications</button>
+                <button class="btn"><i class="fas fa-pen-nib"></i> Science & Tech</button>
+            </nav>
+        </sidebar>
+
+        <!-- Main Content -->
+        <main>
+            <section id="task1" class="main glass">
+                <h2> <a href="#" class="btn hire-btn"><i class="fas fa-box"></i> Blog Post</a></h2>
+                <div class="blog-card">
+                    <div class="blog-content">
+                        <p class="blog-title">
+                            Designed a single HTML file that represents a blog post. Included a title, publication
+                            date,
+                            and author name. Added sections for an introduction, main content (with a list),
+                            and a conclusion. Inserted at least one image and a "Read More" link at the end. And also
+                            used
+                            semantic HTML tags to structure the layout properly.
+                        </p>
+                        <a href="Task 1.html" class="blog-meta">View page</a>
+
+
+                    </div>
+
+                    <img src="Blog Post.png" alt="Blog Post" class="blog-image">
+                </div>
+            </section>
+
+            <section id="task2" class="main glass">
+                <h2> <a href="#" class="btn hire-btn"><i class="fas fa-book"></i> Product Card</a></h2>
+                <div class="blog-card">
+                    <div class="blog-content">
+                        <p class="blog-title">
+                            Designd a product card using HTML and CSS. Included an image, product name, price, and
+                            an "Add to Cart" button. Styled the card with CSS to ensure proper alignment and added
+                            hover effects to the button for a polished look.
+                        </p>
+                        <a href="Task 2.html" class="blog-meta">View page</a>
+                    </div>
+
+                    <img src="Product Card.png" alt="Blog Post" class="product-card-image">
+                </div>
+            </section>
+
+            <section id="task3" class="main glass">
+                <h2> <a href="#" class="btn hire-btn"><i class="fas fa-list-check"></i> Webpage Layout</a></h2>
+                <div class="blog-card">
+                    <div class="blog-content">
+                        <p class="blog-title">
+                            Designed a webpage with four sections: a header, a sidebar, a main content area, and a
+                            footer. Used CSS to make the layout responsive, ensuring it looks good on all
+                            screen sizes. Applied media queries to switch between a grid layout for desktops and a
+                            stacked layout for mobile devices
+                        </p>
+                        <a href="Task3.html" class="blog-meta">You're already here</a>
+                    </div>
+
+                    <img src="Webpage layout.png" alt="Blog Post" class="webpage-layout-image">
+                </div>
+            </section>
+
+            <section id="task4" class="main glass">
+                <h2> <a href="#" class="btn hire-btn"><i class="fas fa-book"></i> Quiz App</a></h2>
+                <div class="blog-card">
+                    <div class="blog-content">
+                        <p class="blog-title">
+                            Created a quiz application using JavaScript with at least 3 multiple-choice questions.
+                            Added functionality to move to the next question and display the score at the end.
+                            And then ensured users cannot proceed without selecting an answer by adding basic
+                            validation.
+                        </p>
+                        <a href="Task 4.html" class="blog-meta">View page</a>
+                    </div>
+
+                    <img src="Quiz App.png" alt="Blog Post" class="quizApp-image">
+                </div>
+            </section>
+
+            <section id="task5" class="main glass">
+                <h2> <a href="#" class="btn hire-btn"><i class="fas fa-question-circle"></i> To-Do List App</a></h2>
+                <div class="blog-card">
+                    <div class="blog-content">
+                        <p class="blog-title">
+                            Created a to-do list application using HTML, CSS, and JavaScript. Included features to
+                            add, edit, delete, and mark tasks as completed. Used CSS to style the app and
+                            made it responsive for different screen sizes.
+                        </p>
+                        <a href="Task 5.html" class="blog-meta">View page</a>
+                    </div>
+
+                    <img src="Todo List App.png" alt="Blog Post" class="todoList-image">
+                </div>
+            </section>
+
+            <section id="task6" class="main glass">
+                <h2> <a href="#" class="btn hire-btn"><i class="fas fa-globe"></i> Web Clone</a></h2>
+                <div class="blog-card">
+                    <div class="blog-content">
+                        <p class="blog-title">
+                            Cloned a simple webpage, like a product or company landing page, and recreated its
+                            layout and design using HTML and CSS. Added interactivity with JavaScript, such as a
+                            button or form functionality, to make it more dynamic
+                        </p>
+                        <a href="Task 6.html" class="blog-meta">View page</a>
+                    </div>
+
+                    <img src="Web clone.png" alt="Blog Post" class="webClone-image">
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer glass">
+        <p>&copy; 2025 Prince Doku-Kyei. All rights reserved</p>
+    </footer>
+</body>
+
+</html>
