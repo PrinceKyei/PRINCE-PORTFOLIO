@@ -690,6 +690,26 @@ section p {
 
 
 @media (max-width:720px) {
+    
+    .hire-btn {
+    background: transparent;
+    border: 2px solid var(--accent);
+    color: #ffffff;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-btn {
+    background: transparent;
+    border: 2px solid var(--accent);
+    color: #ffffff
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+    
+    
     .hero {
         flex-direction: column;
         padding: 36px 18px;
@@ -863,6 +883,25 @@ section p {
 
 /* MOBILE VIEW */
 @media (max-width: 768px) {
+    
+      .hire-btn {
+    background: transparent;
+    border: 2px solid var(--accent);
+    color: #ffffff;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-btn {
+    background: transparent;
+    border: 2px solid var(--accent);
+    color: #ffffff
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+    
 .hero-text h2 {
     font-size: 1.5rem;
     text-align: center;
@@ -929,6 +968,25 @@ section p {
 }
 
 @media (max-width:480px) {
+    
+      .hire-btn {
+    background: transparent;
+    border: 2px solid var(--accent);
+    color: #ffffff;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-btn {
+    background: transparent;
+    border: 2px solid var(--accent);
+    color: #ffffff
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+    
     .hero {
         flex-direction: column;
         padding: 36px 18px;
