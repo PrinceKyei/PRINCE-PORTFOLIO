@@ -135,7 +135,7 @@ section {
 }
 
 .hero-text h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
 
 }
 
@@ -143,11 +143,14 @@ section {
 .highlight {
     color: var(--accent);
     font-weight: bolder;
-    font-size: 2.8rem;
+    font-size: 2rem;
 }
 
 .hero-buttons {
     margin-top: 20px;
+    align-items: center;
+    text-align: center;
+
 }
 
 .hero-img img {
@@ -623,14 +626,6 @@ section p {
     background: #ee4848;
 }
 
-.hero-text h2 {
-    font-size: 1.5rem;
-    text-align: center;
-    align-items: center;
-
-}
-
-
 /* --- Medium screens (tablets, phones landscape) --- */
 @media (max-width: 768px) {
     .navbar {
@@ -654,13 +649,6 @@ section p {
         flex: 1;
         min-width: 200px;
     }
-    .hero-text h2 {
-    font-size: 1.5rem;
-    text-align: center;
-    align-items: center;
-
-}
-
 
     .hero-img img {
         width: 150px;
@@ -690,37 +678,31 @@ section p {
 
 
 @media (max-width:720px) {
-    
-    .hire-btn {
-    background: transparent;
-    border: 2px solid var(--accent);
-    color: #ffffff;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-}
-
-.contact-btn {
-    background: transparent;
-    border: 2px solid var(--accent);
-    color: #ffffff
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-}
-    
-    
     .hero {
         flex-direction: column;
         padding: 36px 18px;
         gap: 20px;
     }
-.hero-text h2 {
-    font-size: 1.5rem;
-    text-align: center;
-    align-items: center;
 
-}
+    .hero-text h2 {
+        font-size: 2rem;
+
+    }
+
+
+    .highlight {
+        color: var(--accent);
+        font-weight: bolder;
+        font-size: 2rem;
+    }
+
+    .hero-buttons {
+        margin-top: 20px;
+        align-items: center;
+        text-align: center;
+
+    }
+
 
     .cards-grid {
         grid-template-columns: 1fr;
@@ -883,31 +865,6 @@ section p {
 
 /* MOBILE VIEW */
 @media (max-width: 768px) {
-    
-      .hire-btn {
-    background: transparent;
-    border: 2px solid var(--accent);
-    color: #ffffff;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-}
-
-.contact-btn {
-    background: transparent;
-    border: 2px solid var(--accent);
-    color: #ffffff
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-}
-    
-.hero-text h2 {
-    font-size: 1.5rem;
-    text-align: center;
-    align-items: center;
-
-}
 
 
     .brand .title {
@@ -968,37 +925,72 @@ section p {
 }
 
 @media (max-width:480px) {
-    
-      .hire-btn {
-    background: transparent;
-    border: 2px solid var(--accent);
-    color: #ffffff;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-}
 
-.contact-btn {
-    background: transparent;
-    border: 2px solid var(--accent);
-    color: #ffffff
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-}
-    
+    /* Hero Section */
     .hero {
+        background: linear-gradient(135deg, #0a192f, #101011);
+        color: #fff;
+        padding: 100px 50px;
+        display: flex;
         flex-direction: column;
-        padding: 36px 18px;
-        gap: 20px;
-    }
-    
-    .hero-text h2 {
-    font-size: 1.5rem;
-    text-align: center;
-    align-items: center;
+        align-items: center;
+        text-align: center;
 
-}
+        opacity: 0;
+        transform: translateY(30px);
+        animation: fadeUp 1.2s ease forwards;
+        animation-delay: 0.4s;
+    }
+
+    .hero-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        flex-wrap: wrap;
+    }
+
+    .hero-text h2 {
+        font-size: 2rem;
+
+    }
+
+
+    .highlight {
+        color: var(--accent);
+        font-weight: bolder;
+        font-size: 2rem;
+    }
+
+    .hero-buttons {
+        margin-top: 20px;
+        align-items: center;
+        text-align: center;
+
+    }
+
+    .hire-btn {
+        background: transparent;
+        border: 2px solid var(--accent);
+        color: #ffffff;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 10px;
+
+    }
+
+    .hero-buttons a {
+        width: 80%;
+        text-align: center;
+    }
+
+    .contact-btn {
+        background: transparent;
+        border: 2px solid var(--accent);
+        color: #ffffff
+    }
 
 
     .cards-grid {
@@ -1079,6 +1071,17 @@ section p {
         width: 400px;
     }
 
+    .hero-buttons {
+        flex-direction: column;
+        gap: 10px;
+
+    }
+
+    .hero-buttons a {
+        width: 80%;
+        text-align: center;
+    }
+
 
 
 
@@ -1096,9 +1099,71 @@ section p {
 
 }
 
+@media (max-width: 600px) {
+    .hero-buttons {
+        flex-direction: column;
+        gap: 10px;
+
+    }
+
+    .hero-buttons a {
+        width: 80%;
+        text-align: center;
+    }
+}
 
 /* --- Small screens (phones portrait) --- */
 @media (max-width: 480px) {
+    .hero-text h2 {
+        font-size: 2rem;
+
+    }
+
+
+    .highlight {
+        color: var(--accent);
+        font-weight: bolder;
+        font-size: 2rem;
+    }
+
+    .hero-buttons {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 15px;
+
+    }
+
+    .hero-buttons a {
+        text-decoration: none;
+        border: 2px solid var(--accent);
+        color: white;
+        background-color: transparent;
+        padding: 10px 20px;
+        border-radius: 6px;
+        font-weight: 600;
+        transition: 0.3s;
+    }
+
+    .hero-buttons a:hover {
+        background-color: var(--accent);
+        color: #fff;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 10px;
+
+    }
+
+    .hero-buttons a {
+        width: 80%;
+        text-align: center;
+    }
+
+
     .navbar {
         flex-direction: row;
         justify-content: space-between;
@@ -1131,14 +1196,11 @@ section p {
         text-align: center;
     }
 
-   .hero-text h2 {
-    display: block;
-    font-size: 1.5rem;
-    text-align: center;
-    align-items: center;
-
-}
-
+    .hero-text h2 {
+        display: block;
+        font-size: 2rem;
+        text-align: center;
+    }
 
     /* Tab titles row */
     .tab-titles {
