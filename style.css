@@ -1101,14 +1101,14 @@ section p {
 
 @media (max-width: 600px) {
     .hero-buttons {
-        flex-direction: row;
-        flex-wrap: nowrap;
+        flex-direction: column;
+        gap: 10px;
 
     }
 
     .hero-buttons a {
-        font-size: 0.9rem;
-        padding: 8px 20px;
+        width: 80%;
+        text-align: center;
     }
 }
 
@@ -1153,15 +1153,16 @@ section p {
     }
 
     .hero-buttons {
-        flex-direction: row;
-        flex-wrap: nowrap;
+        flex-direction: column;
+        gap: 10px;
 
     }
 
     .hero-buttons a {
-        font-size: 0.9rem;
-        padding: 8px 20px;
+        width: 80%;
+        text-align: center;
     }
+
 
     .navbar {
         flex-direction: row;
